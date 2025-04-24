@@ -1,6 +1,18 @@
+html, body {
+    min-height: 100hv;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: "Open Sans", sans-serif;
     background-image: linear-gradient(rgb(58, 153, 117), rgb(138, 149, 153));
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 
 h1, h2, h3 {
@@ -18,17 +30,18 @@ h3 {
 header {
     padding: 30px;
     background-image: linear-gradient(rgb(4, 23, 51), rgb(36, 84, 156));
-    color: rgb(58, 153, 117);
+    color: #9d714e;
 }
 
 header h2 {
-    color: #9d714e; 
+    color: rgb(138, 149, 153); 
 }
 
 footer {
     color: rgb(138, 149, 153);
     background-image:linear-gradient(rgb(36, 84, 156), rgb(4, 23, 51));
     padding: 20px 0;
+    width: 100%;
 }
 
 .row-content {
