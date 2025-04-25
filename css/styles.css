@@ -15,8 +15,16 @@ main {
     flex: 1;
 }
 
-h1, h2, h3 {
+h2 {
+    font-family: "Roboto";
+} 
+
+h1, h3 {
     font-family: "Lobster", cursive;
+}
+
+p {
+    font-family: "Roboto";
 }
 
 h2 {
@@ -35,6 +43,12 @@ header {
 
 header h2 {
     color: rgb(138, 149, 153); 
+    font-family: cursive;
+    font-size: 20px;
+}
+
+.navbar {
+    background-color: #9d714e;
 }
 
 footer {
