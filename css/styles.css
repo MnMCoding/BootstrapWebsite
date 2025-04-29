@@ -28,11 +28,12 @@ p {
 }
 
 h2 {
-    color: rgb(4, 23, 51);
+    color: rgb(36, 84, 156);
+    font-family: "Lobster", cursive;
 }
 
 h3 {
-    color: rgb(36, 84, 156);
+    color: rgb(4, 23, 51);
 }
 
 header {
