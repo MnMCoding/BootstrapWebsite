@@ -36,6 +36,10 @@ h3 {
     color: rgb(4, 23, 51);
 }
 
+h4 {
+    font-family: cursive;
+}
+
 header {
     padding: 30px;
     background-image: linear-gradient(rgb(4, 23, 51), rgb(36, 84, 156));
@@ -63,4 +67,13 @@ footer {
     padding: 50px 0;
     border-bottom: 1px ridge;
     min-height: 200px;
+}
+
+section h4 {
+    font-family: "Lobster", cursive;
+}
+
+section p {
+    font-family: cursive; 
+    margin: 10px;
 }
