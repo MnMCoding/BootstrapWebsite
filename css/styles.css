@@ -82,3 +82,33 @@ section p {
     font-family: cursive; 
     margin: 10px;
 }
+
+/* Nav tabs on about me page*/
+.nav-tabs {
+    background-color: rgb(58, 153, 117);
+    border-radius: 5px 5px 0 0;
+    font-family: "Lobster", cursive;
+}
+
+.nav-tabs .nav-item .nav-link {
+    color: rgb(36, 84, 156);
+}
+
+.nav-tabs .nav-item .nav-link.active {
+    color: rgb(36, 84, 156);
+    background-color: white;
+}
+
+.nav-tabs .nav-item .nav-link:hover {
+    color: rgb(36, 84, 156);
+    background-color: white;
+
+}
+
+.tab-content {
+    border: 1px solid rgb(58, 153, 117);
+    border-top: none; 
+    padding: 10px; 
+    border-radius: 5px;
+    background-color: white;
+}
