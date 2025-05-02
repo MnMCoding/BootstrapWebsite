@@ -56,6 +56,11 @@ header h2 {
     background-color: #9d714e;
 }
 
+.tips-title {
+    color: rgb(4, 23, 51);
+    text-decoration: underline;
+}
+
 footer {
     color: rgb(138, 149, 153);
     background-image:linear-gradient(rgb(36, 84, 156), rgb(4, 23, 51));
