@@ -30,6 +30,9 @@
                     <h2>“An adventure is only an inconvenience rightly considered. An inconvenience is only an adventure wrongly considered.” 
                     </br>- G. K. Chesterton</h2>
                 </div>
+                <div class="col-md-4 col-xl-2 mt-4 align-self-center">
+                    <a href="#bookingForm" class="btn btn-info btn-lg text-white text-nowrap">Book Meeting</a>
+                </div>
             </div>
         </div>
     </header>
@@ -60,7 +63,7 @@
                 <div class="d-flex">
                     <img class="me-3 img-thumbnail" src="" alt="topic 1">
                     <!--put image in and fill alt text-->
-                    <div class="alighn-self-center">
+                    <div class="align-self-center">
                         <h3>Insert Topic 1</h3>
                         <p>A little about this Topic 1</p>
                     </div>
@@ -73,8 +76,14 @@
                 <h2>Title Topic 2 maybe Games</h2>
             </div>
             <div class="col">
-                <h3>Insert Topic 2</h3>
-                <p>A little about this Topic 2</p>
+                <div class="d-flex">
+                    <div class="align-self-center">
+                        <h3>Insert Topic 2</h3>
+                        <p>A little about this Topic 2</p>
+                    </div>
+                    <img class="me-3 img-thumbnail" src="" alt="topic 2">
+                    <!--put image in and fill alt text-->
+                </div>
             </div>
         </section>
 
@@ -86,13 +95,49 @@
                 <div class="d-flex">
                     <img class="me-3 img-thumbnail" src="" alt="topic 3">
                     <!--put image in and fill alt text-->
-                    <div class="alighn-self-center">
+                    <div class="align-self-center">
                         <h3>Insert Topic 3</h3>
                         <p>A little about this Topic 3</p>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="row row-content">
+            <div class="col-sm-9 mx-auto">
+                <div class="card">
+                    <h3 class="card-header" style="color: rgb(58, 153, 117); background-color: rgb(4, 23, 51)">Book a Meeting with Me!</h3>
+                    <div class="card-body">
+                        <form id="bookingForm">
+                            <div class="row mb-3">
+                                <label for="meeters" class="col-sm-6 col-form-label">What kind of Meeting?</label>
+                                <div class="col-sm-6">
+                                    <select name="numCampers" id="numCampers" class="form-control">
+                                        <option>Select...</option>
+                                        <option>Zoom</option>
+                                        <option>Microsoft Teams</option>
+                                        <option>Discord</option>
+                                        <option>Facetime</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="date" class="col-sm-6 col-form-label">Date</label>
+                                <div class="col-sm-6">
+                                    <input type="date" id="date" name="date" class="form-control" placeholder="Date">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <button type="submit" class="btn" style="background-color: rgb(36, 84, 156); color: white;">Search</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 	</main>
     
     <footer>
