@@ -31,7 +31,7 @@
                     </br>- G. K. Chesterton</h2>
                 </div>
                 <div class="col-md-4 col-xl-2 mt-4 align-self-center">
-                    <a href="#bookingForm" class="btn btn-info btn-lg text-white text-nowrap">Book Meeting</a>
+                    <button type= button class="btn btn-lg text-white text-nowrap" data-bs-toggle="modal" data-bs-target="#bookMeetingModal" style="background-color: rgb(138, 149, 153);">Book Meeting</button>
                 </div>
             </div>
         </div>
@@ -50,9 +50,96 @@
                     <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-gamepad fa-lg"></i> Sites</a></li>
                     <li class="nav-item"><a class="nav-link" href="contactme.html"><i class="fa-solid fa-address-card fa-lg"></i> Contact</a></li>
                 </ul>
+                <span class="navbar-text ms-auto">
+                    <a role="button" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        <i class="fa fa-sign-in"></i> Login
+                    </a>
+                </span>
             </div>
         </div>
     </nav>
+
+    <div class="modal fade" id="loginModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color: rgb(4, 23, 51)">
+                    <h3 class="modal-title" style="color: rgb(255, 255, 255);">Login</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="row">
+                                <div class="mb-3 col-12">
+                                    <label class="sr-only" for="loginEmail">Email address</label>
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail"
+                                        placeholder="Enter email">
+                                </div>
+                                <div class="mb-3 col-12">
+                                    <label class="sr-only" for="loginPassword">Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="loginPassword"
+                                        placeholder="Super secret password">
+                                </div>
+                                <div class="col">
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label"> Remember me</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <button type="button" class="btn" style="color: rgb(255, 255, 255); background-color: #9d714e" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn" style="color: rgb(255, 255, 255); background-color: rgb(36, 84, 156)">Save changes</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="bookMeetingModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header" style=" color: rgb(58, 153, 117); background-color: rgb(4, 23, 51)">
+                    <h3 class="modal-title" style="color: rgb(255, 255, 255);">Book a Meeting</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form id="bookingForm">
+                            <div class="row mb-3">
+                                <label for="meeters" class="col-sm-6 col-form-label">What kind of Meeting?</label>
+                                <div class="col-sm-6">
+                                    <select name="bookername" id="bookers" class="form-control">
+                                        <option>Select...</option>
+                                        <option>Zoom</option>
+                                        <option>Microsoft Teams</option>
+                                        <option>Discord</option>
+                                        <option>Facetime</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="date" class="col-sm-6 col-form-label">Date</label>
+                                <div class="col-sm-6">
+                                    <input type="date" id="date" name="date" class="form-control" placeholder="Date">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                    <button type="submit" class="btn" style="background-color: rgb(36, 84, 156); color: white;">Search</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <main class="container">
         <div class="row">
@@ -147,7 +234,6 @@
                 </div>
             </div>
         </section>
-
 	</main>
     
     <footer>
